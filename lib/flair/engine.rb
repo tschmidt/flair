@@ -1,3 +1,5 @@
+require 'rails'
+require 'sass-rails'
 require 'kss'
 
 module Flair

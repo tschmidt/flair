@@ -1,21 +1,21 @@
-<div class="styleguide-example">
-  <h3><%= @section.section %> <em><%= @section.filename %></em></h3>
-  <div class="styleguide-description">
+<div class="flair-styleguide-example">
+  <h3 class="flair-styleguide-title"><%= @section.section %> <small class='pull-right'><%= @section.filename %></small></h3>
+  <div class="flair-styleguide-description">
     <p><%= @section.description %></p>
     <% if @section.modifiers.any? %>
-      <ul class="styleguide-modifier">
+      <ul class="flair-styleguide-modifier">
         <% @section.modifiers.each do |modifier| %>
           <li><strong><%= modifier.name %></strong> - <%= modifier.description %></li>
         <% end %>
       </ul>
     <% end %>
   </div>
-  <div class="styleguide-element">
+  <div class="flair-styleguide-element">
     <%= @content.html_safe %>
   </div>
   <% @section.modifiers.each do |modifier| %>
-    <div class="styleguide-element styleguide-modifier">
-      <span class="styleguide-modifier-name"><%= modifier.name %></span>
+    <div class="flair-styleguide-element flair-styleguide-modifier">
+      <span class="flair-styleguide-modifier-name"><%= modifier.name %></span>
       <%= @content.gsub('$modifier_class', modifier.class_name).html_safe %>
     </div>
   <% end %>

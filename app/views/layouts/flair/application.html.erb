@@ -2,20 +2,21 @@
 <html>
 <head>
   <title>Flair</title>
-  <%= stylesheet_link_tag    "flair/application", :media => "all" %>
-  <%= javascript_include_tag "flair/application" %>
+  <%= stylesheet_link_tag "flair/application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   
   <div class='flair-container'>
-    <header class='page-header'>
+    <header class='flair-page-header'>
       <h1><%= link_to "Styleguides", root_path %></h1>
     </header>
 
     <div class='row'>
       <div class='span3'>
-        <%= render 'navigation' %>
+        <div class='flair-styleguide-navigation'>
+          <%= render 'navigation' %>
+        </div>
       </div>
       
       <div class='span9'>

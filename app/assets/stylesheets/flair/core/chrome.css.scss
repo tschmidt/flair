@@ -1,0 +1,92 @@
+/*
+    Wrapper for a styleguide example
+    
+    No styleguide reference
+*/
+.flair-styleguide-example {
+  border: 1px solid;
+  border-radius: 3px;
+  @include box-shadow(0 0 8px 2px $flairGrayLight);
+}
+
+.flair-styleguide-title {
+  @include font-sans-serif();
+  
+  background-color: #353535;
+  color: $flairWhite;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 18px 15px;
+  
+  .pull-right {
+    float: right;
+  }
+  
+  small {
+    font-size: $flairBaseFontSize;
+  }
+}
+
+.flair-styleguide-description {
+  @include font-sans-serif();
+  background-color: #f8f8f8;
+  border-bottom: 1px solid $flairGrayLight;
+  padding: 15px;
+}
+
+.flair-styleguide-element {
+  @include clearfix();
+  
+  border-bottom: 1px solid $flairGrayLight;
+  
+  padding: 15px;
+  position: relative;
+  
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  
+  &:hover .flair-styleguide-modifier-name {
+    border-color: $flairGrayLight;
+    color: $flairGrayLight;
+  }
+}
+
+.flair-styleguide-modifier-name {
+  border: 1px solid $flairGrayLighter;
+  border-top: 0;
+  
+  color: $flairGrayLighter;
+  text-align: center;
+  
+  padding: 4px 8px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+.flair-page-header {
+  @include font-sans-serif();
+  border-bottom: 1px solid $flairGrayLight;
+  margin-bottom: 15px;
+  
+  a {
+    color: #5f5f5f;
+    text-decoration: none;
+  }
+}
+
+.flair-styleguide-navigation {
+  @include font-sans-serif();
+  
+  a {
+    color: $flairBlue;
+    font-size: 1.1em;
+    text-decoration: none;
+    
+    &.active {
+      color: $flairGray;
+      font-weight: bold;
+    }
+  }
+}

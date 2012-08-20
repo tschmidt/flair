@@ -1,0 +1,47 @@
+/*
+  Turns the element with this class into a stylized button. Typically used on
+  &lt;a&gt; or &lt;button&gt; elements.
+  
+  :hover - sets the style for when the user hover their mouse over the element
+  :active - sets the style for when the user click the button
+  :focus - for use with keyboard navigation
+  
+  Styleguide 1.0
+*/
+.flair-btn {
+  background-color: #f9f9f9;
+  
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 0;
+  
+  color: #353535;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+.flair-btn:hover,
+.flair-btn.pseudo-class-hover {
+  background-color: #c9c9c9;
+  color: #353535;
+  text-decoration: none; // just in case this is a link
+}
+
+.flair-btn:active,
+.flair-btn.pseudo-class-active {
+  background-color: #666;
+  color: #f8f8f8;
+}
+
+.flair-btn:focus,
+.flair-btn.pseudo-class-focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
