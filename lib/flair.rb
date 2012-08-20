@@ -1,0 +1,2 @@
+module Flair
+end
