@@ -1,0 +1,21 @@
+<h2>Welcome to the Styleguides for this application</h2>
+
+<p>
+  Please override this file in your applications
+  <code>app/views/flair/styleguides/index.html.erb</code> file.
+</p>
+
+<p>
+  To control the navigation to the left, please modify the
+  <code>app/views/flair/styleguides/_navigation.html.erb</code> partial.
+</p>
+
+<p>
+  Please create a new file in the
+  <code>app/views/flair/styleguides/</code> for each new section you would like
+  to have displayed. For example, if you would like to create a new section for
+  forms the you would create the new file
+  <code>app/views/flair/styleguides/forms.html.erb</code>. Then add a new
+  navigation link to the <code>_navgation.html.erb</code> partial with
+  <code>&lt;%= link_to_styleguide "X.X - Forms", styleguide_path(:forms) %&gt;</code>.
+</p>

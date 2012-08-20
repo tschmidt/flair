@@ -1,0 +1,4 @@
+.flair-container {
+  width: 960px;
+  @include container-fixed();
+}

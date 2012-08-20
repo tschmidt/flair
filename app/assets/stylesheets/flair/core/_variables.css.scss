@@ -1,0 +1,83 @@
+// Variables.less
+// Variables to customize the look and feel of Flair
+// -------------------------------------------------
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+$flairBlack:                 #000 !default;
+$flairGrayDarker:            #222 !default;
+$flairGrayDark:              #333 !default;
+$flairGray:                  #555 !default;
+$flairGrayLight:             #999 !default;
+$flairGrayLighter:           #eee !default;
+$flairWhite:                 #fff !default;
+
+
+// Accent colors
+// ----------------------------
+$flairBlue:                  #049cdb !default;
+$flairBlueDark:              #0064cd !default;
+$flairGreen:                 #46a546 !default;
+$flairRed:                   #9d261d !default;
+$flairYellow:                #ffc40d !default;
+$flairOrange:                #f89406 !default;
+$flairPink:                  #c3325f !default;
+$flairPurple:                #7a43b6 !default;
+
+// Scaffolding
+// -------------------------
+$flairBodyBackground:        $flairWhite !default;
+$flairTextColor:             $flairGrayDark !default;
+
+// Links
+// -------------------------
+$flairLinkColor:             #08c !default;
+$flairLinkColorHover:        darken($flairLinkColor, 15%) !default;
+
+// Typography
+// -------------------------
+$flairSansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$flairSerifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$flairMonoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
+ 
+$flairBaseFontSize:          13px !default;
+$flairBaseFontFamily:        $flairSansFontFamily !default;
+$flairBaseLineHeight:        18px !default;
+$flairAltFontFamily:         $flairSerifFontFamily !default;
+ 
+$flairHeadingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily
+$flairHeadingsFontWeight:    bold !default;    // instead of browser default, bold
+$flairHeadingsColor:         inherit !default; // empty to use BS default, @textColor
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Hr border color
+// -------------------------
+$flairHrBorder:                         $flairGrayLighter !default;
+
+
+// FIXED GRID
+// --------------------------------------------------
+
+// Default, 940px
+// -------------------------
+$flairGridColumns:             12 !default;
+$flairGridColumnWidth:         60px !default;
+$flairGridGutterWidth:         20px !default;
+$flairGridRowWidth:            ($flairGridColumns * $flairGridColumnWidth) + ($flairGridGutterWidth * ($flairGridColumns - 1)) !default;
+
+// Portrait tablet to default desktop
+// -------------------------
+$flairGridColumnWidthTablet:   42px !default;
+$flairGridGutterWidthTablet:   20px !default;
+
+// Large desktop and up
+// -------------------------
+$flairGridColumnWidthLarge:    70px !default;
+$flairGridGutterWidthLarge:    30px !default;

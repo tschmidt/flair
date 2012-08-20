@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     flair (0.0.1)
-      bootstrap-sass (~> 2.0.4)
       kss (~> 0.4.0)
       rails (~> 3.2)
 
@@ -37,7 +36,6 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
-    bootstrap-sass (2.0.4.0)
     builder (3.0.0)
     erubis (2.7.0)
     hike (1.2.1)

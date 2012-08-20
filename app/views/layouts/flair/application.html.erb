@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <div class='flair-container'>
+    <header class='page-header'>
+      <h1><%= link_to "Styleguides", root_path %></h1>
+    </header>
 
-<%= yield %>
+    <div class='row'>
+      <div class='span3'>
+        <%= render 'navigation' %>
+      </div>
+      
+      <div class='span9'>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

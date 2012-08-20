@@ -1,0 +1,51 @@
+<p>
+  Given the following stylesheet in <code>app/assets/stylesheets/buttons.css.scss</code>.
+</p>
+
+<pre><code>/*
+  Turns the element with this class into a stylized button. Typically used on
+  &lt;a&gt; or &lt;button&gt; elements.
+  
+  :hover - sets the style for when the user hover their mouse over the element
+  :active - sets the style for when the user click the button
+  
+  Styleguide 1.0
+*/
+.btn {
+  background-color: #f9f9f9;
+  
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 0;
+  
+  color: #353535;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+.btn:hover,
+.btn.pseudo-class-hover {
+  background-color: #c9c9c9;
+  color: #353535;
+  text-decoration: none; // just in case this is a link
+}
+
+.btn:active,
+.btn.pseudo-class-active {
+  background-color: #666;
+  color: #f8f8f8;
+}</code></pre>
+
+<p>
+  You would add the following block to the file in
+  <code>app/views/flair/styleguides/buttons.html.erb</code>
+</p>
+<pre><code>&lt;%= styleguide_block '1.0' do %&gt;
+  &lt;button class='btn $modifier_class'&gt;I am a button&lt;/button&gt;
+&lt;%- end -%&gt;</code></pre>
