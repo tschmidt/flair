@@ -283,25 +283,25 @@
 
 // The Grid
 @mixin gridCore($columnWidth, $gutterWidth) {
-  .row {
+  .flair-row {
     margin-left: $gutterWidth * -1;
     @include clearfix();
   }
 
-  [class*="span"] {
+  [class*="flair-span"] {
     float: left;
     margin-left: $gutterWidth;
   }
 
   // Set the container width, and override it for fixed navbars in media queries
-  .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { @include gridCoreSpan($flairGridColumns, $columnWidth, $gutterWidth); }
+  .flair-container { @include gridCoreSpan($flairGridColumns, $columnWidth, $gutterWidth); }
 
   @include gridCoreSpanX($flairGridColumns, $columnWidth, $gutterWidth);
   @include gridCoreOffsetX($flairGridColumns, $columnWidth, $gutterWidth);
 }
 @mixin gridCoreSpanX($cols, $columnWidth, $gutterWidth) {
   @for $i from 1 through $cols {
-    .span#{$i} { @include gridCoreSpan($i, $columnWidth, $gutterWidth) };
+    .flair-span#{$i} { @include gridCoreSpan($i, $columnWidth, $gutterWidth) };
   }
 }
 @mixin gridCoreSpan($columns, $columnWidth, $gutterWidth) {
@@ -309,7 +309,7 @@
 }
 @mixin gridCoreOffsetX($cols, $columnWidth, $gutterWidth) {
   @for $i from 1 through $cols {
-    .offset#{$i} { @include gridCoreOffset($i, $columnWidth, $gutterWidth); };
+    .flair-offset#{$i} { @include gridCoreOffset($i, $columnWidth, $gutterWidth); };
   }
 }
 @mixin gridCoreOffset($columns, $columnWidth, $gutterWidth) {
