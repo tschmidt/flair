@@ -12,6 +12,9 @@ Using a very specific commenting style in your stylesheets, Flair will provide
 you the ability to quickly create styleguide blocks for the different components
 of your website.
 
+Flair depends on the [KSS gem](https://github.com/kneath/kss) as well as the
+[Bootstrap-SASS gem](https://github.com/thomas-mcdonald/bootstrap-sass).
+
 How does this work?
 --------------------------
 
