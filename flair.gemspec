@@ -7,11 +7,11 @@ require "flair/version"
 Gem::Specification.new do |s|
   s.name        = "flair"
   s.version     = Flair::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Flair."
-  s.description = "TODO: Description of Flair."
+  s.authors     = ["Terry Schmidt"]
+  s.email       = ["terry.m.schmidt@gmail.com"]
+  s.homepage    = "https://github.com/tschmidt/flair"
+  s.summary     = "Easily add a styleguide to your rails app."
+  s.description = s.summary
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
