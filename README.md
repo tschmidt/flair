@@ -14,10 +14,26 @@ of your website.
 
 Flair depends on the [KSS gem](https://github.com/kneath/kss).
 
+Installation
+--------------------------
+
+Since flair is designed to work with a Rails 3 application you can simply add
+this line to your `Gemfile`.
+
+```ruby
+gem 'flair'
+```
+
+Then run the `bundle` command to install it. Once installed, you will have access
+to a Rails generator called `flair:install`. This will set up all the necessary
+files for you as well as mount the engine in your routes file. If you would like
+to have Flair install an example styleguide for you, simply add the `--examples`
+option when running the generator.
+
 How does this work?
 --------------------------
 
-Traditionally, if you were to create a styleguide for you website, you would
+Traditionally, if you were to create a styleguide for your website, you would
 need to create a new element for each variation of your component. Take a
 stylized button for example. You would need to have a different HTML block for
 it's normal state, hover state, active state, disabled state, etc. That's a lot
@@ -113,7 +129,7 @@ show in your styleguide. So in this case, we would add it to the core style, the
 
 I won't go into detail as to how you lay out the comments as Kyle does a good
 job of that on the [KSS page](http://github.com/kneath/kss). However, there
-is a very important change that I made to the CSS itself. YOu may have noticed
+is a very important change that I made to the CSS itself. You may have noticed
 that I added 2 new classes: `.pseudo-class-hover` and `.pseudo-class-active`.
 These are specific to the KSS Ruby parser and are dynamically created when 
 your stylesheets are parsed. These will come in handy, trust me.
@@ -121,7 +137,7 @@ your stylesheets are parsed. These will come in handy, trust me.
 So, in our comment block we have specified a description for our button widget,
 alternate states that it can have and the styleguide section that we should
 look at to see how the button appears. pretty simple right? I mean, you are
-probably already commenting your CSS anyway right?
+probably already commenting your CSS anyway...right?
 
 Now onto the magic. You will need to create a new file in
 `app/view/flair/styleguide/` called `buttons.html.erb`. This filename can be
@@ -140,4 +156,4 @@ dynamically changed to any of the alternate states that you reference in your
 stylesheet. This is also why we had to add those 2 new pseudo class names for
 `:hover` and `:active`. The result will look something like this:
 
-Insert Image Here
+![Example Styleguide](example/styleguide.png)
