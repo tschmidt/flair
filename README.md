@@ -156,4 +156,4 @@ dynamically changed to any of the alternate states that you reference in your
 stylesheet. This is also why we had to add those 2 new pseudo class names for
 `:hover` and `:active`. The result will look something like this:
 
-![Example Styleguide](https://github.com/tschmidt/flair/blob/master/example/styleguide.png)
+![Example Styleguide](https://raw.github.com/tschmidt/flair/master/example/styleguide.png)
