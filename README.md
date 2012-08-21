@@ -150,10 +150,17 @@ what you are showing. In that file you will want to add the following code.
 <%- end -%>
 ```
 
-That's it! When you create your example HTML you will need to make sure you
-add the `$modifier_class` class. This is a special classname that will be
-dynamically changed to any of the alternate states that you reference in your
-stylesheet. This is also why we had to add those 2 new pseudo class names for
+Then, in your `app/views/flair/stlyeguides/_navigation.html.erb` file add
+a link to that styleguide.
+
+```erb
+<%= link_to_styleguide '1.0 Buttons', styleguide_path(:buttons) %>
+```
+
+Point your browser to `http://yourappurl/flair` and BAM! Instant styleguide
+goodness. You may have noticed the `$modifier_class` in the `styleguide_block`.
+That is a special string that will be updated with the alternate states that you
+specify in your styles comment block. This is also why we had to add those 2 new pseudo class names for
 `:hover` and `:active`. The result will look something like this:
 
 ![Example Styleguide](https://raw.github.com/tschmidt/flair/master/example/styleguide.png)
